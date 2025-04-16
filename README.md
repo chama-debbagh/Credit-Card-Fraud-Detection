@@ -1,26 +1,30 @@
 # Credit-Card-Fraud-Detection
 # 💳 Détection de Fraude Bancaire avec Machine Learning
 
-Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objectif est de détecter automatiquement les transactions frauduleuses à l’aide de modèles supervisés de classification.
-
 ---
 
 ## Dataset
 
 - Source () : [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- Le fichier `creditcard.csv` n'est pas inclus dans ce dépôt (taille > 100 Mo).  
+Vous pouvez le télécharger directement depuis Kaggle.
 ---
 
 ## Méthodologie
 
-- Nettoyage et normalisation (`StandardScaler`)
-- Suppression de la colonne `Time`
-- Équilibrage des classes avec **SMOTE**
-- Séparation train/test avec **stratification**
-- Entraînement de 3 modèles :
-  - Régression Logistique
-  - Random Forest
-  - XGBoost
-- Évaluation : `Precision`, `Recall`, `F1-score`, `ROC AUC`
+1. Nettoyage des données et normalisation via `StandardScaler`
+2. Suppression de la variable `Time`, non pertinente pour le modèle
+3. Équilibrage des classes fortement déséquilibrées avec la méthode **SMOTE**
+4. Séparation du jeu de données en `train/test` avec stratification
+5. Entraînement de trois modèles :
+   - Régression Logistique
+   - Random Forest
+   - XGBoost
+6. Évaluation des performances via :
+   - `Precision`
+   - `Recall`
+   - `F1-score`
+   - `ROC AUC`
 
 ---
 
@@ -38,10 +42,10 @@ ____________________|__________________|_____________________|__________|_______
 
 ## Exemple de visualisations
 
-- Distribution des montants
-- Répartition des classes
+- Distribution des montants de transaction
+- Répartition des classes (fraudes vs normales)
 - Matrice de confusion
-- Importance des variables
+- Importance des variables selon le modèle
 
 ---
 
