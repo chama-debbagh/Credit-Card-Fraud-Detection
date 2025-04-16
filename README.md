@@ -7,7 +7,7 @@ Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objecti
 
 ## Dataset
 
-- Source : [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- Source () : [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 ---
 
 ## Méthodologie
@@ -26,7 +26,7 @@ Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objecti
 
 ## Modèles et Résultats
 
- Modèle             | Recall (fraude)  | Precision (fraude)  | F1-score  | ROC AUC  |
+ Modèle             | Recall (fraude)  | Precision (fraude)  | F1-score  | ROC AUC|
 ____________________|__________________|_____________________|__________|_________|
  LogisticRegression | 0.92             | 0.06                | 0.11     | 0.9459  |
  RandomForest       | ...              | ...                 | ...      | ...     |
