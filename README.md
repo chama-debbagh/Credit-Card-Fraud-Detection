@@ -5,16 +5,12 @@ Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objecti
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - Source : [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-- 284 807 transactions
-- 30 features PCA (anonymisées) + montant (`Amount`) + cible (`Class`)
-- Données fortement déséquilibrées : 0 = normal, 1 = fraude
-
 ---
 
-## ⚙️ Méthodologie
+## Méthodologie
 
 - Nettoyage et normalisation (`StandardScaler`)
 - Suppression de la colonne `Time`
@@ -28,19 +24,19 @@ Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objecti
 
 ---
 
-## 🤖 Modèles et Résultats
+## Modèles et Résultats
 
-| Modèle             | Recall (fraude) | Precision (fraude) | F1-score | ROC AUC |
-|--------------------|------------------|---------------------|----------|---------|
-| LogisticRegression | 0.92             | 0.06                | 0.11     | 0.9459  |
-| RandomForest       | ...              | ...                 | ...      | ...     |
-| XGBoost            | 0.90             | 0.20                | 0.32     | 0.9458  |
+ Modèle             | Recall (fraude)  | Precision (fraude)  | F1-score  | ROC AUC  |
+____________________|__________________|_____________________|__________|_________|
+ LogisticRegression | 0.92             | 0.06                | 0.11     | 0.9459  |
+ RandomForest       | ...              | ...                 | ...      | ...     |
+ XGBoost            | 0.90             | 0.20                | 0.32     | 0.9458  |
 
 > XGBoost donne le meilleur compromis entre rappel et précision.
 
 ---
 
-## 📈 Exemple de visualisations
+## Exemple de visualisations
 
 - Distribution des montants
 - Répartition des classes
@@ -49,7 +45,7 @@ Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objecti
 
 ---
 
-## 🛠️ Stack technique
+## Stack technique
 
 - Python
 - Pandas, NumPy
@@ -59,14 +55,5 @@ Projet réalisé dans le cadre d’un apprentissage de Data Science. L’objecti
 - Seaborn, Matplotlib
 
 ---
-
-## 📁 Structure du projet
----
-
-## 🧠 Auteur
-
-Chama Debbagh  
-Étudiante en Data Science – Juin 2025  
-Projet à fort impact métier, appliqué à un contexte réel (assurances/banques)
 
 
